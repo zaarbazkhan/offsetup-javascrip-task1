@@ -333,7 +333,7 @@ var arr2 = [
 
   mergedArray.splice(5, 1);
   
-
+// replace email 
   for (var i = 0; i < mergedArray.length; i++) {
     if (mergedArray[i].email === "bgillbanks@noaa.gov") {
         mergedArray[i].email = "user@offsetup.com";
@@ -342,7 +342,7 @@ var arr2 = [
 }
 
 
-
+// convert mergd arrays to table form is in index2.html in script tag
 
 
 
