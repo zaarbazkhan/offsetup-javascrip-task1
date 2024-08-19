@@ -332,6 +332,22 @@ var arr2 = [
   // Remove the user with id 5
 
   mergedArray.splice(5, 1);
+  console.log(mergedArray);
+  
+ 
+
+
+
+
+   // checking for email if it exists or not 
+var emailToFind = "ocerseyc@answers.com";
+var emailExists = mergedArray.find(person => person.email === emailToFind);
+ 
+if (emailExists) {
+  console.log("Email exists in record");
+} else {
+  console.log("Email does not exist");
+}
   
 // replace email 
   for (var i = 0; i < mergedArray.length; i++) {
@@ -339,7 +355,11 @@ var arr2 = [
         mergedArray[i].email = "user@offsetup.com";
        break;
     }
+    console.log(mergedArray[i].email);
+    
 }
+ 
+ 
 
 
 // convert mergd arrays to table form is in index2.html in script tag
@@ -361,12 +381,10 @@ for (const num of numbers) {
 
 console.log("Even Numbers:", evenNumbers); // Output: [2, 4, 6, 8, 10]
 
-//  sum of the array
-let sum = 0;
 
-for (const num of numbers) {
-    sum += num;
-}
+// sum of the array
+const arr = [1,2,3,4,5,6,7,8,9,10];
+const array2 = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(array2);
 
-console.log("Sum of Array:", sum); // Output: 55
 
